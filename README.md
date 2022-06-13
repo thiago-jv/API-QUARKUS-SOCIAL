@@ -22,15 +22,15 @@ Instalar o IntelliJ [IntelliJ] (https://www.jetbrains.com/pt-br/idea/download/#s
  
  5- Mysql [Sobre](https://www.mysql.com/)
  
- 6- Hibernate-orm-panache[Sobre](https://quarkus.io/guides/hibernate-orm-panache)
+ 6- Hibernate-orm-panache [Sobre](https://quarkus.io/guides/hibernate-orm-panache)
  
- 7- Jsonb[Sobre](https://quarkus.io/guides/rest-json)
+ 7- Jsonb [Sobre](https://quarkus.io/guides/rest-json)
  
- 8- OpenApi[Sobre](https://quarkus.io/guides/openapi-swaggerui)
+ 8- OpenApi [Sobre](https://quarkus.io/guides/openapi-swaggerui)
  
- 9- Lombok[Sobre](https://projectlombok.org/setup/maven)
+ 9- Lombok [Sobre](https://projectlombok.org/setup/maven)
  
- 10- Docker Compose[Sobre](https://docs.docker.com/compose/)
+ 10- Docker Compose [Sobre](https://docs.docker.com/compose/)
  
  
 # Proceso de criação do projeto e para rodar o mesmo
