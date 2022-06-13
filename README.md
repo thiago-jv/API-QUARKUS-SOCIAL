@@ -1,4 +1,4 @@
-Projeto demonstrativo utilizando a nova stak do java Quakus
+Projeto demonstrativo utilizando a nova stak do java Quakus - referente ao curso [quakus](https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java/)
 
 # Pré-requisitos
 
