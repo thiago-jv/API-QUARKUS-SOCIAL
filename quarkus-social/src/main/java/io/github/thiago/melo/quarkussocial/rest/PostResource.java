@@ -9,6 +9,8 @@ import io.github.thiago.melo.quarkussocial.rest.dto.CreatePostRequest;
 import io.github.thiago.melo.quarkussocial.rest.dto.PostResponse;
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import io.quarkus.panache.common.Sort;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -22,6 +24,8 @@ import java.util.stream.Collectors;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class PostResource {
+
+    private static final Logger LOG = Logger.getLogger(PostResource.class);
 
     private UserRepository userRepository;
     private PostRepository postRepository;
@@ -40,6 +44,7 @@ public class PostResource {
     @POST
     @Transactional
     public Response savePost(@PathParam("userId") Long userId, CreatePostRequest postRequest) {
+        LOG.info("Criando post");
         User user = userRepository.findById(userId);
         if (user == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
@@ -57,6 +62,7 @@ public class PostResource {
     @GET
     public Response listPosts(@PathParam("userId") Long userId,
                               @HeaderParam("followerId") Long followerId) {
+        LOG.info("Buscando post por id do usuário e seguidor");
         User user = userRepository.findById(userId);
         if (user == null) {
             return Response.status(Response.Status.NOT_FOUND).build();

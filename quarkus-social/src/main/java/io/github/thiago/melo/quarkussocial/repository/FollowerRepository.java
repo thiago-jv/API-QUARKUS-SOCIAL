@@ -7,10 +7,15 @@ import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import io.quarkus.panache.common.Parameters;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.*;
 
 @ApplicationScoped
 public class FollowerRepository implements PanacheRepository<Follower> {
+
+    @PersistenceContext
+    private EntityManager em;
 
     public boolean follows(User follower, User user) {
 

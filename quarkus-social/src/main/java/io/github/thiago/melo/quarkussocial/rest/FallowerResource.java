@@ -6,6 +6,7 @@ import io.github.thiago.melo.quarkussocial.repository.UserRepository;
 import io.github.thiago.melo.quarkussocial.rest.dto.FollowerPerUserResponse;
 import io.github.thiago.melo.quarkussocial.rest.dto.FollowerResponse;
 import io.github.thiago.melo.quarkussocial.rest.dto.FollowerRquest;
+import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -19,6 +20,8 @@ import java.util.stream.Collectors;
 @Produces(MediaType.APPLICATION_JSON)
 public class FallowerResource {
 
+    private static final Logger LOG = Logger.getLogger(FallowerResource.class);
+
     private FollowerRepository followerRepository;
     private UserRepository userRepository;
 
@@ -31,7 +34,6 @@ public class FallowerResource {
     @PUT
     @Transactional
     public Response followUser(@PathParam("userId") Long userId, FollowerRquest followerRquest) {
-
         if(userId.equals(followerRquest.getFollowerId())){
             return Response.status(Response.Status.CONFLICT).entity("You can't your Self").build();
         }
