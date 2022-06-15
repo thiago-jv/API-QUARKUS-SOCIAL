@@ -37,13 +37,16 @@ Instalar o IntelliJ [IntelliJ] (https://www.jetbrains.com/pt-br/idea/download/#s
 ```
 1- Para criação desse projeto
 -> https://quarkus.io/guides/maven-tooling
+
 2- Comandos iniciais
 -> mvn io.quarkus.platform:quarkus-maven-plugin:2.9.2.Final:create
+
 3 Após a criação, entrar no projeto e verificar se está compilando
 -> mvn compile quarkus:dev
 
 4- Posso listar todas depencias que posso add no meu projeto
 -> mvn quarkus:list-extensions
+
 5- Add uma extenção
 -> mvn quarkus:add-extension -Dextensions="hibernate-validator"
 -> mvn quarkus:add-extension -Dextensions="jdbc-h2, hibernate-orm, hibernate-orm-panache, resteasy-jsonb"
@@ -65,6 +68,7 @@ https://projectlombok.org/setup/maven
 
 9- Subindo a applicação no docker
 -> instalar o docker -> https://docs.docker.com/desktop/windows/install/
+
 10- Criando a imagem
 -> docker ps -> para ver se tem alguma imagem criada ou rodando
 
