@@ -6,7 +6,7 @@ O maven deve está instalado, caso não esteja segue o link [maven](https://dica
 
 Instalar e configurar o java, caso não esteja segue o link [java](https://medium.com/beelabacademy/configurando-vari%C3%A1veis-de-ambiente-java-home-e-maven-home-no-windows-e-unix-d9461f783c26)
 
-Instalar e configuar o docker link [docker](https://docs.docker.com/desktop/windows/install/) 
+Instalar e configurar o docker link [docker](https://docs.docker.com/desktop/windows/install/) 
 
 Instalar o IntelliJ [IntelliJ] (https://www.jetbrains.com/pt-br/idea/download/#section=windows)
 
