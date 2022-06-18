@@ -1,4 +1,5 @@
-Projeto demonstrativo utilizando a nova stak do java Quakus - referente ao curso [quakus](https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java/) na plataforma de ensino udemy
+Projeto demonstrativo utilizando a nova stak do java Quakus - referente ao curso [Aprenda Quarkus e Desenvolva API's RESTful Poderosas em Java
+](https://www.udemy.com/course/aprenda-quarkus-e-desenvolva-apis-restful-poderosas-em-java/) na plataforma de ensino udemy
 
 # Pré-requisitos
 
